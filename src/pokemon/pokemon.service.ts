@@ -45,7 +45,7 @@ export class PokemonService {
   }
 
   findAll(paginationDto: PaginationDto) {
-    const { limit = +process.env.DEFAULT_LIMI!, offset = 0 } = paginationDto;
+    const { limit = this.defaultLimit, offset = 0 } = paginationDto;
     return this.pokemonModel.find()
       .limit(limit)
       .skip(offset)
@@ -80,7 +80,7 @@ export class PokemonService {
   async update(value: string, updatePokemonDto: UpdatePokemonDto) {
 
     const pokemon = await this.findOne(value);
-    console.log(pokemon)
+    // console.log(pokemon)
     if (updatePokemonDto && updatePokemonDto.name)
       updatePokemonDto.name = updatePokemonDto.name.toLowerCase().trim();
 
