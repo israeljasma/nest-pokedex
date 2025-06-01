@@ -1,3 +1,3 @@
-MONGODB=mongodb://mongo:EmjWPTxmLjaPcmdzIQOFkdQnQilxbBaB@ballast.proxy.rlwy.net:22551
+MONGODB=mongodb://localhost:27017/nest-pokemon
 PORT=3000
 DEFAULT_LIMI=5
