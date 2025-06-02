@@ -1,3 +1,3 @@
 MONGODB=mongodb://localhost:27017/nest-pokemon
 PORT=3000
-DEFAULT_LIMI=5
+DEFAULT_LIMIT=5
